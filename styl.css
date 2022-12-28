@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(40,40,92,1) 100%, rgba(38,42,43,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.kalkulator{
+    width: 25%;
+    height: 75%;
+    border: 1px solid white;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 10px 10px 15px #3f3f3f;
+}
+.kalkulator .screen{
+    width: 100%;
+    min-height: 150px;
+    background-color: #1f1f1f;
+    margin-bottom: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid white;
+}
+.kalkulator .screen p.last{
+    transform: scale(.5);
+}   
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.kalkulator .btns button{
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+    border: none;
+    background-color: black;
+    box-shadow: 0px 0px 5px #3f3f3f;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.kalkulator .btns button.history{
+    margin-top: 100px;
+    width: 75%;
+}
+.kalkulator .btns button.equalButton{
+    background-color: #1f1f1f;
+}
+.kalkulator .btns button:hover{
+    background-color: #2f2f2f;
+}
+.kalkulator .btns button.equalButton:hover{
+    background-color: darkblue;
+}
+.historySection{
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -500px;
+    color: white;
+    transition: .5s;
+}
+.historySection.show{
+    right: 50px;
+}
+
+@media screen and (max-width: 1700px){
+    .kalkulator{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1300px){
+    .kalkulator{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1150px){
+    .kalkulator{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1050px){
+    .kalkulator{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 950px){
+    .kalkulator{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 850px){
+    .kalkulator{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 765px){
+    .kalkulator{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 705px){
+    .kalkulator{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 655px){
+    .kalkulator{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 615px){
+    .kalkulator{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 575px){
+    .kalkulator{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 540px){
+    .kalkulator{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 510px){
+    .kalkulator{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 485px){
+    .kalkulator{
+        width: 100%;
+        height: 90%;
+    }
+}
